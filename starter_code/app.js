@@ -65,6 +65,6 @@ app.get("/albums/:artistId", (request, response, next) => {
     });
 });
 
-app.listen(3000, () =>
-  console.log("My Spotify project running on port 3000 🎧 🥁 🎸 🔊")
+app.listen(3022, () =>
+  console.log("My Spotify project running on port 3022 🎧 🥁 🎸 🔊")
 );

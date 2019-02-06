@@ -1,8 +1,18 @@
-{{#each albumsInput}}
-<p>{{this.name}}</p>
-<br>
-<img src="{{this.images.0.url}}" alt="" />
+<!DOCTYPE html>
+<html lang="en">
 
-<br>
-<a href="/tracks/{{this.id}}">View Tracks</a>
-{{/each}}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Express Forms and URLS</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+
+  <p>{{#each albumsInput}}</p>
+  <p>{{this.name}}</p>
+  <br>
+  <img src="{{this.images.0.url}}" alt="" />
+
+  <br>
+  <a href="/tracks/{{this.id}}">View Tracks</a>
+  {{/each}}
